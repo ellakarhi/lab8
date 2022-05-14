@@ -17,8 +17,9 @@ people = csv2list('people.csv')
 
 def create_email():
   email = []
-  first_letter = (person[1](0))
+  
   for person in people:
+    first_letter = person[1][0]
     print(person[2] + first_letter + "@gmail.com")
 
 
