@@ -1,19 +1,43 @@
-count = 0
+student_grades = []
 student = []
 students = []
-name = ""
-grade = 0
+def get_students():
+  student = []
+  students = []
+  name = ""
+  grade = 0
+  while True:
+    name = input("Enter a name: ")
 
-while name != 'exit':
- 
-  name = input("Enter a name:")
-  
-  if name != 'exit':
+    if name == "exit":
+      break
+
     student.append(name)
     grade = int(input("Enter grade: "))
     student.append(grade)
-
-    students.append(student)
+    student.append(student)
     student = []
+  return students
 
-print (student)
+def get_average(students):
+  total = 0
+  for student in students:
+    total  += student[1]
+    
+  average = total / len(students)
+  return average 
+
+def highest_grade(students):
+  student.sort(key=lambda x:x[1])
+  print (students)
+  
+average = round(get_average(student_grades),2)
+print(f"The class average is (average)")
+highest_grade(student_grades)
+
+
+#all_students = get_students()
+
+
+
+#print (student)

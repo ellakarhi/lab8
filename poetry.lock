@@ -1,0 +1,17 @@
+[[package]]
+name = "counter"
+version = "1.0.0"
+description = "Counter package defines the \"counter.Counter\" class similar to bags or multisets in other languages."
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "6b4cd3a36090329aed3cd329b74cb12f1b306acf16916cf08b8bc1e60eba620b"
+
+[metadata.files]
+counter = [
+    {file = "Counter-1.0.0.tar.gz", hash = "sha256:9e008590e360936a66c98e1a01e7a9a0ecf6af19cc588107121f5fb4613bb60c"},
+]
