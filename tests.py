@@ -30,7 +30,9 @@ def get_average(students):
 def highest_grade(students):
   student.sort(key=lambda x:x[1])
   print (students)
-  
+
+student_grades = [["Alice", 99] ["Bob", 98] ["Charlie", 98]]
+
 average = round(get_average(student_grades),2)
 print(f"The class average is (average)")
 highest_grade(student_grades)
