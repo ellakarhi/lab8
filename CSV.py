@@ -15,7 +15,6 @@ def csv2list(filepath):
 people = csv2list('people.csv')
 
 def create_email():
-  email = []
   
   for person in people:
     first_letter = person[1][0]
@@ -29,7 +28,21 @@ def count_country(people):
   for country in people:
     if country[4] not in countries:
       countries.append(country[4])
+
+  country_count = []
+  counter = []
+  for country in countries:
+    count = 0
+    counter.append(country)
+    for person in people:
+      if person[4] == country:
+        count += 1
+
+    counter.append(count)
+    country_count.append(counter)
+    counter = []
     
-  print (countries)
+    
+  print (country_count)
 
 count_country(people)
