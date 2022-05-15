@@ -21,7 +21,7 @@ def create_email():
     print(person[2] + first_letter + "@gmail.com")
 
 
-def count_country(people):
+def country_count(people):
   
   countries = []
 
@@ -29,7 +29,7 @@ def count_country(people):
     if country[4] not in countries:
       countries.append(country[4])
 
-  country_count = []
+  count_country = []
   counter = []
   for country in countries:
     count = 0
@@ -39,10 +39,10 @@ def count_country(people):
         count += 1
 
     counter.append(count)
-    country_count.append(counter)
+    count_country.append(counter)
     counter = []
     
     
-  print (country_count)
+  print (count_country)
 
 count_country(people)

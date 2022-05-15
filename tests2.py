@@ -33,8 +33,8 @@ def highest_grade(students):
   print (students)
   
 #student_grades = get_students()
-student_grades = [['Alice', 99], ['Bob', 98], ['Charlie', 98]]
-
+#student_grades = [['Alice', 99], ['Bob', 98], ['Charlie', 98]]
+get_students()
 average = round(get_average(student_grades),2)
 print (f"The class average is {average}")
 highest_grade(student_grades)

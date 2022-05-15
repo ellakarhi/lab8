@@ -6,12 +6,46 @@ category = "main"
 optional = false
 python-versions = "*"
 
+[[package]]
+name = "libcgroup"
+version = "0.2.4"
+description = "A library that handles Linux cgroups internally using the libcgroup shared library."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+libcgroup-bind = "*"
+
+[package.extras]
+stub = ["typing"]
+
+[[package]]
+name = "libcgroup-bind"
+version = "1.0.7"
+description = "Python binding for libcgroup"
+category = "main"
+optional = false
+python-versions = ">=2.6"
+
+[package.extras]
+stub = ["typing"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "6b4cd3a36090329aed3cd329b74cb12f1b306acf16916cf08b8bc1e60eba620b"
+content-hash = "a9e3504911fdeea30aff1e7a389b2f89606abd92c79390e92fa1e69febab5a44"
 
 [metadata.files]
 counter = [
     {file = "Counter-1.0.0.tar.gz", hash = "sha256:9e008590e360936a66c98e1a01e7a9a0ecf6af19cc588107121f5fb4613bb60c"},
+]
+libcgroup = [
+    {file = "libcgroup-0.2.4-py3-none-any.whl", hash = "sha256:1893f80dff43110b0d9843d93231d39972799255f3befaf69a3be1f345fb2de5"},
+    {file = "libcgroup-0.2.4.tar.gz", hash = "sha256:6170af7238b92a5422a9ef72d5bf774edb71116336a9b707186827e887d36eb8"},
+]
+libcgroup-bind = [
+    {file = "libcgroup_bind-1.0.7-py2-none-any.whl", hash = "sha256:f1ee1774efb8ca2061861e1fc139076c72f4f09b394eaadd85eafb7a43b88cfb"},
+    {file = "libcgroup_bind-1.0.7-py3-none-any.whl", hash = "sha256:bb4181fbb181ef3cc9d4ae69c00589d5dd1d6b5dc1d5de8cda06624f6c23051b"},
+    {file = "libcgroup_bind-1.0.7.tar.gz", hash = "sha256:3c3d781a9b8e379398fedb3eaa22066390d4ff9e53afcff73e70085c541e5f98"},
 ]
