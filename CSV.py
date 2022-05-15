@@ -15,6 +15,7 @@ def csv2list(filepath):
 people = csv2list('people.csv')
 
 def create_email():
+  """Creates emails with each persons last name and then the first letter of their first name."""
   
   for person in people:
     first_letter = person[1][0]
@@ -22,6 +23,7 @@ def create_email():
 
 
 def country_count(people):
+  """Prints the amount of people from each country"""
   
   countries = []
 
