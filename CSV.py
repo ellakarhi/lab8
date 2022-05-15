@@ -29,8 +29,7 @@ def count_country(people):
   for country in people:
     if country[4] not in countries:
       countries.append(country[4])
-    res = countries.count
-    print(res)
+    
   print (countries)
 
 count_country(people)
