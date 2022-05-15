@@ -10,14 +10,14 @@ def get_students():
     name = input("Enter a name: ")    
     if name == 'exit':
       break
-      
+        
     student.append(name)
     grade = int(input("Enter grade: "))
     student.append(grade)
     students.append(student)
     student = []
-
-  return students
+  
+    return students
 
 
 def get_average(students):

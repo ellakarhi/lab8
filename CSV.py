@@ -45,4 +45,25 @@ def country_count(people):
     
   print (count_country)
 
-count_country(people)
+def user_input():
+  email = int(input("Would you like to know the created emails(1), or would you like to know the country count(2). Type in the number assigned to the task you would like to run: "))
+  if email == 1:
+    create_email()
+  elif email == 2:
+    country_count(people)
+  else:
+    print("You must type in either 1 or 2, please try again.")
+    user_input()
+
+  again = int(input("Would you like to run another function?Would you like to know the created emails(1), or would you like to know the country count(2). Type in the number assigned to the task you would like to run,  If you wouldn't like to run another function type in 3: "))
+  if again == 1:
+    create_email()
+  elif again == 2:
+    country_count(people)
+  elif again == 3:
+    exit
+  else:
+    print("You must type in either 1, 2 or 3 please try again.")
+    user_input()
+user_input()
+#country_count(people)
