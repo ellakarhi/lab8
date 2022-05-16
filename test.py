@@ -21,8 +21,8 @@ def get_students():
 
 
 def get_average(students):
-  """Gets the average of students grades."""
-  total = 100
+  """Gets the average of student's grades."""
+  total = 0 #I tried differnt numbers but it didn't make a differnce.
   for student in students:
     total += student[1]
 
@@ -35,7 +35,7 @@ def highest_grade(students):
   print (students)
   
 #student_grades = [['Alice', 99], ['Bob', 98], ['Charlie', 98]]
-get_students()
+student_grades = get_students()
 average = round(get_average(student_grades),2)
 print (f"The class average is {average}")
 highest_grade(student_grades)
