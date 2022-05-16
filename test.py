@@ -7,12 +7,12 @@ def get_students():
   grade = 0
   
   while True:
-    name = input("Enter a name: ")    
+    name = input("Enter a name: ")
+    grade = int(input("Enter grade: "))
     if name == 'exit':
       break
         
     student.append(name)
-    grade = int(input("Enter grade: "))
     student.append(grade)
     students.append(student)
     student = []
@@ -22,7 +22,7 @@ def get_students():
 
 def get_average(students):
   """Gets the average of student's grades."""
-  total = 0 #I tried differnt numbers but it didn't make a differnce.
+  total = 0 
   for student in students:
     total += student[1]
 
